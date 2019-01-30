@@ -8,7 +8,7 @@ import historyMap from './history'
 import findTransactionMap from './find-transaction'
 import createBitcoinInvoice from './create-bitcoin-invoice'
 
-export default async ({ password, apiName, accountEmail, advcashSoapUrl = 'https://wallet.advcash.com/wsm/merchantWebService?wsdl' }) => {
+export default async ({ password, apiName, accountEmail, advcashSoapUrl = 'https://wallet.advcash1.com/wsm/merchantWebService?wsdl' }) => {
     const arg0 = requestArgs(apiName, password, accountEmail)
     const advcashClient = await soap(advcashSoapUrl)
 
